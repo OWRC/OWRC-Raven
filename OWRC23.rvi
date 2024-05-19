@@ -1,0 +1,56 @@
+# -------------------------------------------------------
+# Raven Input (.rvi) file
+# HBV-EC semi-distributed watershed model
+# written by M. Marchildon 2024-05-18 14:51:04
+# using pyRaven builder
+# Raven version: 3.8
+# -------------------------------------------------------
+
+:RunName OWRC23
+:OutputDirectory M:\OWRC-Raven\OWRC23\output
+:StartDate 1993-10-01 00:00:00
+:EndDate   2023-09-30 00:00:00
+:TimeStep  1.0
+
+:SoilModel            SOIL_MULTILAYER 3
+:CatchmentRoute       ROUTE_TRI_CONVOLUTION
+:Routing              ROUTE_HYDROLOGIC
+:InterpolationMethod  INTERP_NEAREST_NEIGHBOR
+:RainSnowFraction     RAINSNOW_DATA
+:PotentialMeltMethod  POTMELT_HBV
+:Evaporation          PET_HARGREAVES_1985
+:OW_Evaporation       PET_HARGREAVES_1985
+:PrecipIceptFract     PRECIP_ICEPT_USER
+
+# HBV-EC reservoir aliases
+:Alias                FAST_RESERVOIR SOIL[1]
+:Alias                SLOW_RESERVOIR SOIL[2]
+:LakeStorage          SLOW_RESERVOIR
+
+# hydrologic process order for HBV-EC emulation
+:HydrologicProcesses    #  ALGORITHM            ProcessFrom      ProcessTo
+ :SnowRefreeze             FREEZE_DEGREE_DAY    SNOW_LIQ         SNOW
+ :Precipitation            PRECIP_RAVEN         ATMOS_PRECIP     MULTIPLE
+ :CanopyEvaporation        CANEVP_ALL           CANOPY           ATMOSPHERE
+ :CanopySnowEvap           CANEVP_ALL           CANOPY_SNOW      ATMOSPHERE
+ :SnowBalance              SNOBAL_SIMPLE_MELT   SNOW             SNOW_LIQ
+  :-->Overflow             RAVEN_DEFAULT        SNOW_LIQ         PONDED_WATER
+ :Infiltration             INF_HBV              PONDED_WATER     MULTIPLE
+ :Flush                    RAVEN_DEFAULT        SURFACE_WATER    FAST_RESERVOIR
+ :SoilEvaporation          SOILEVAP_HBV         SOIL[0]          ATMOSPHERE
+ :CapillaryRise            CRISE_HBV            FAST_RESERVOIR   SOIL[0]
+ :SoilEvaporation          SOILEVAP_HBV         FAST_RESERVOIR   ATMOSPHERE
+ :Percolation              PERC_CONSTANT        FAST_RESERVOIR   SLOW_RESERVOIR
+ :Baseflow                 BASE_THRESH_STOR     FAST_RESERVOIR   SURFACE_WATER
+ :Baseflow                 BASE_POWER_LAW       FAST_RESERVOIR   SURFACE_WATER
+ :Baseflow                 BASE_LINEAR          SLOW_RESERVOIR   SURFACE_WATER
+:EndHydrologicProcesses
+
+# output options
+:WriteMassBalanceFile
+:WriteForcingFunctions
+:DefineHRUGroups LandHRUs LakeHRUs
+:LateralEquilibrate RAVEN_DEFAULT LandHRUs FAST_RESERVOIR 1.0 INTERBASIN
+:LateralEquilibrate RAVEN_DEFAULT LandHRUs SLOW_RESERVOIR 1.0 INTERBASIN
+:EvaluationMetrics KLING_GUPTA NASH_SUTCLIFFE PCT_BIAS
+:CustomOutput MONTHLY AVERAGE To:SLOW_RESERVOIR BY_HRU

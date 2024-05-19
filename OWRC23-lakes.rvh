@@ -1,0 +1,338 @@
+# --------------------------------------------
+# Raven Lake Definition (.rvh) file
+# OWRC v.2023 10km² semi-distributed HBV-EC model
+# written by M. Marchildon 2024-05-18 14:51:04
+# using pyRaven builder
+# Raven version: 3.8
+# --------------------------------------------
+
+:Reservoir   Lake-1806512
+  :SubBasinID   1806512
+  :HRUID   177
+  :Type RESROUTE_STANDARD
+  :WeirCoefficient   0.6
+  :CrestWidth   10.0
+  :MaxDepth   20.0
+  :LakeArea   14767200.0
+:EndReservoir
+
+:Reservoir   Lake-2024829
+  :SubBasinID   2024829
+  :HRUID   178
+  :Type RESROUTE_STANDARD
+  :WeirCoefficient   0.6
+  :CrestWidth   10.0
+  :MaxDepth   20.0
+  :LakeArea   10695600.0
+:EndReservoir
+
+:Reservoir   Lake-2215478
+  :SubBasinID   2215478
+  :HRUID   255
+  :Type RESROUTE_STANDARD
+  :WeirCoefficient   0.6
+  :CrestWidth   10.0
+  :MaxDepth   20.0
+  :LakeArea   12135600.0
+:EndReservoir
+
+:Reservoir   Lake-3332782
+  :SubBasinID   3332782
+  :HRUID   544
+  :Type RESROUTE_STANDARD
+  :WeirCoefficient   0.6
+  :CrestWidth   10.0
+  :MaxDepth   20.0
+  :LakeArea   10058400.0
+:EndReservoir
+
+:Reservoir   Lake-3704043
+  :SubBasinID   3704043
+  :HRUID   1006
+  :Type RESROUTE_STANDARD
+  :WeirCoefficient   0.6
+  :CrestWidth   10.0
+  :MaxDepth   20.0
+  :LakeArea   12416400.0
+:EndReservoir
+
+:Reservoir   Lake-4826571
+  :SubBasinID   4826571
+  :HRUID   1486
+  :Type RESROUTE_STANDARD
+  :WeirCoefficient   0.6
+  :CrestWidth   10.0
+  :MaxDepth   20.0
+  :LakeArea    9864000.0
+:EndReservoir
+
+:Reservoir   Lake-4795053
+  :SubBasinID   4795053
+  :HRUID   1624
+  :Type RESROUTE_STANDARD
+  :WeirCoefficient   0.6
+  :CrestWidth   10.0
+  :MaxDepth   20.0
+  :LakeArea   12812400.0
+:EndReservoir
+
+:Reservoir   Lake-5609301
+  :SubBasinID   5609301
+  :HRUID   2230
+  :Type RESROUTE_STANDARD
+  :WeirCoefficient   0.6
+  :CrestWidth   10.0
+  :MaxDepth   20.0
+  :LakeArea   15343200.0
+:EndReservoir
+
+:Reservoir   Lake-5121059
+  :SubBasinID   5121059
+  :HRUID   2284
+  :Type RESROUTE_STANDARD
+  :WeirCoefficient   0.6
+  :CrestWidth   10.0
+  :MaxDepth   20.0
+  :LakeArea   16664400.0
+:EndReservoir
+
+:Reservoir   Lake-5986540
+  :SubBasinID   5986540
+  :HRUID   2313
+  :Type RESROUTE_STANDARD
+  :WeirCoefficient   0.6
+  :CrestWidth   10.0
+  :MaxDepth   20.0
+  :LakeArea   11264400.0
+:EndReservoir
+
+:Reservoir   Lake-6306916
+  :SubBasinID   6306916
+  :HRUID   3033
+  :Type RESROUTE_STANDARD
+  :WeirCoefficient   0.6
+  :CrestWidth   10.0
+  :MaxDepth   20.0
+  :LakeArea   13852800.0
+:EndReservoir
+
+:Reservoir   Lake-6843241
+  :SubBasinID   6843241
+  :HRUID   3820
+  :Type RESROUTE_STANDARD
+  :WeirCoefficient   0.6
+  :CrestWidth   10.0
+  :MaxDepth   20.0
+  :LakeArea   15519600.0
+:EndReservoir
+
+:Reservoir   Lake-6569533
+  :SubBasinID   6569533
+  :HRUID   4048
+  :Type RESROUTE_STANDARD
+  :WeirCoefficient   0.6
+  :CrestWidth   10.0
+  :MaxDepth   20.0
+  :LakeArea    9507600.0
+:EndReservoir
+
+:Reservoir   Lake-7475478
+  :SubBasinID   7475478
+  :HRUID   4445
+  :Type RESROUTE_STANDARD
+  :WeirCoefficient   0.6
+  :CrestWidth   10.0
+  :MaxDepth   20.0
+  :LakeArea   11199600.0
+:EndReservoir
+
+:Reservoir   Lake-6895991
+  :SubBasinID   6895991
+  :HRUID   4530
+  :Type RESROUTE_STANDARD
+  :WeirCoefficient   0.6
+  :CrestWidth   10.0
+  :MaxDepth   20.0
+  :LakeArea   46389600.0
+:EndReservoir
+
+:Reservoir   Lake-7397678
+  :SubBasinID   7397678
+  :HRUID   5321
+  :Type RESROUTE_STANDARD
+  :WeirCoefficient   0.6
+  :CrestWidth   10.0
+  :MaxDepth   20.0
+  :LakeArea   14050800.0
+:EndReservoir
+
+:Reservoir   Lake-8330087
+  :SubBasinID   8330087
+  :HRUID   5534
+  :Type RESROUTE_STANDARD
+  :WeirCoefficient   0.6
+  :CrestWidth   10.0
+  :MaxDepth   20.0
+  :LakeArea   52686000.0
+:EndReservoir
+
+:Reservoir   Lake-8265520
+  :SubBasinID   8265520
+  :HRUID   5733
+  :Type RESROUTE_STANDARD
+  :WeirCoefficient   0.6
+  :CrestWidth   10.0
+  :MaxDepth   20.0
+  :LakeArea   31752000.0
+:EndReservoir
+
+:Reservoir   Lake-9088062
+  :SubBasinID   9088062
+  :HRUID   6322
+  :Type RESROUTE_STANDARD
+  :WeirCoefficient   0.6
+  :CrestWidth   10.0
+  :MaxDepth   20.0
+  :LakeArea   55710000.0
+:EndReservoir
+
+:Reservoir   Lake-8200018
+  :SubBasinID   8200018
+  :HRUID   6385
+  :Type RESROUTE_STANDARD
+  :WeirCoefficient   0.6
+  :CrestWidth   10.0
+  :MaxDepth   20.0
+  :LakeArea   13456800.0
+:EndReservoir
+
+:Reservoir   Lake-8668060
+  :SubBasinID   8668060
+  :HRUID   6540
+  :Type RESROUTE_STANDARD
+  :WeirCoefficient   0.6
+  :CrestWidth   10.0
+  :MaxDepth   20.0
+  :LakeArea   14626800.0
+:EndReservoir
+
+:Reservoir   Lake-8243480
+  :SubBasinID   8243480
+  :HRUID   6608
+  :Type RESROUTE_STANDARD
+  :WeirCoefficient   0.6
+  :CrestWidth   10.0
+  :MaxDepth   20.0
+  :LakeArea   34887600.0
+:EndReservoir
+
+:Reservoir   Lake-8826795
+  :SubBasinID   8826795
+  :HRUID   6646
+  :Type RESROUTE_STANDARD
+  :WeirCoefficient   0.6
+  :CrestWidth   10.0
+  :MaxDepth   20.0
+  :LakeArea   11462400.0
+:EndReservoir
+
+:Reservoir   Lake-8312972
+  :SubBasinID   8312972
+  :HRUID   6742
+  :Type RESROUTE_STANDARD
+  :WeirCoefficient   0.6
+  :CrestWidth   10.0
+  :MaxDepth   20.0
+  :LakeArea   729673200.0
+:EndReservoir
+
+:Reservoir   Lake-8326075
+  :SubBasinID   8326075
+  :HRUID   6759
+  :Type RESROUTE_STANDARD
+  :WeirCoefficient   0.6
+  :CrestWidth   10.0
+  :MaxDepth   20.0
+  :LakeArea   11167200.0
+:EndReservoir
+
+:Reservoir   Lake-8586553
+  :SubBasinID   8586553
+  :HRUID   7135
+  :Type RESROUTE_STANDARD
+  :WeirCoefficient   0.6
+  :CrestWidth   10.0
+  :MaxDepth   20.0
+  :LakeArea   44733600.0
+:EndReservoir
+
+:Reservoir   Lake-9295309
+  :SubBasinID   9295309
+  :HRUID   8070
+  :Type RESROUTE_STANDARD
+  :WeirCoefficient   0.6
+  :CrestWidth   10.0
+  :MaxDepth   20.0
+  :LakeArea   16855200.0
+:EndReservoir
+
+:Reservoir   Lake-10979824
+  :SubBasinID   10979824
+  :HRUID   10095
+  :Type RESROUTE_STANDARD
+  :WeirCoefficient   0.6
+  :CrestWidth   10.0
+  :MaxDepth   20.0
+  :LakeArea   95724000.0
+:EndReservoir
+
+:Reservoir   Lake-11403984
+  :SubBasinID   11403984
+  :HRUID   10694
+  :Type RESROUTE_STANDARD
+  :WeirCoefficient   0.6
+  :CrestWidth   10.0
+  :MaxDepth   20.0
+  :LakeArea   66297600.0
+:EndReservoir
+
+:Reservoir   Lake-13078672
+  :SubBasinID   13078672
+  :HRUID   12871
+  :Type RESROUTE_STANDARD
+  :WeirCoefficient   0.6
+  :CrestWidth   10.0
+  :MaxDepth   20.0
+  :LakeArea   19220400.0
+:EndReservoir
+
+:Reservoir   Lake-13640426
+  :SubBasinID   13640426
+  :HRUID   13465
+  :Type RESROUTE_STANDARD
+  :WeirCoefficient   0.6
+  :CrestWidth   10.0
+  :MaxDepth   20.0
+  :LakeArea   19479600.0
+:EndReservoir
+
+:Reservoir   Lake-14032983
+  :SubBasinID   14032983
+  :HRUID   13608
+  :Type RESROUTE_STANDARD
+  :WeirCoefficient   0.6
+  :CrestWidth   10.0
+  :MaxDepth   20.0
+  :LakeArea   11577600.0
+:EndReservoir
+
+:Reservoir   Lake-24810972
+  :SubBasinID   24810972
+  :HRUID   18150
+  :Type RESROUTE_STANDARD
+  :WeirCoefficient   0.6
+  :CrestWidth   10.0
+  :MaxDepth   20.0
+  :LakeArea    2120400.0
+:EndReservoir
+

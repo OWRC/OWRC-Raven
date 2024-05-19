@@ -1,0 +1,12 @@
+# --------------------------------------------
+# initial conditions (.rvc) file
+# OWRC v.2023 10km² semi-distributed HBV-EC model
+# written by M. Marchildon 2024-05-18 14:51:04
+# using pyRaven builder
+# Raven version: 3.8
+# --------------------------------------------
+
+# initial conditions
+:UniformInitialConditions SOIL[0]     10.000
+:UniformInitialConditions SOIL[1]     10.000
+:UniformInitialConditions SOIL[2]     10.000
